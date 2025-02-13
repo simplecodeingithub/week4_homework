@@ -1,3 +1,4 @@
+# List is a collection which is ordered and mutable(changeable)
 cheese = ['Cheddar', 'Stilton', 'Cornish Yarg']
 print(cheese)
 
@@ -11,6 +12,8 @@ print(cheese)
 # append() - adds a single item to the end of the list
 cheese.append('oke')
 print(cheese)
+
+print('#' * 80)
 
 # extend()- Adds multiple elements to a list.
 cheese.extend(['Brie','Mozzarella'])
