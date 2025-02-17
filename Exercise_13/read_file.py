@@ -1,5 +1,5 @@
 # Open the file in read mode with UTF-8 encoding
-file_content = open('sample_files/pelican.txt','rt',encoding="utf-8")
+file_content = open('sample_files/pelican.txt','r',encoding="utf-8")
 
 # Read the entire file content as a string
 print("#" * 25, "SLURPING 1 ", "#" * 25, "\n")
@@ -9,7 +9,7 @@ print(content)
 
 # Read file as a list (each line is an item in a list)
 print("#" * 25, "SLURPING 2 ", "#" * 25,"\n")
-lines_as_list = open('sample_files/pelican.txt','rt',encoding="utf-8").readlines()
+lines_as_list = open('sample_files/pelican.txt','r',encoding="utf-8").readlines()
 print(lines_as_list)  # print the list format of file content
 print(f"The Length of the list: {len(lines_as_list)}\n")
 

@@ -13,6 +13,9 @@ print(cheese)
 cheese.append('oke')
 print(cheese)
 
+# cheese.insert(-1,'oke')
+# print(cheese)
+
 print('#' * 80)
 
 # extend()- Adds multiple elements to a list.
