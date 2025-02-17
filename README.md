@@ -1,5 +1,5 @@
 ## Exercise 12 – Collections  
-This exercise focuses on understanding Python collections, including lists, tuples, and dictionaries.  
+This exercise focuses on understanding Python collections, including lists, tuples, and Sets.  
 
 ### Collection Types:  
 * **Lists** – Ordered, mutable (can be changed), and allows duplicate values.  
