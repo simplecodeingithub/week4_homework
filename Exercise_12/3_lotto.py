@@ -1,25 +1,29 @@
 import random  # Importing the random module to generate random numbers
 #help(random)
-#sample(self, population, k, *, counts=None)P-A sequence (list, tuple, string, or set) or a range of values.K-that specifies the number of elements to pick.
 
-#The random.sample() function generates a list of unique numbers by selecting a specified number of elements from a given range (in this case, 6 numbers from range(1, 51)).
-lottery_numbers = random.sample(range(1,51),6)
+# numbers = [1, 2, 3, 4, 5]
+# print(random.sample(numbers, 2))
+
+#The random.sample() function generates a list of unique numbers,Selects 6 unique random numbers from the range 1 to 49.
+lottery_numbers = random.sample(range(1,50),6)
 print(f"List of unique random numbers are: {lottery_numbers}")
 
 print('#' * 50)
 
-lotto_numbers = [ ]
+lotto_numbers = set()
+print(type(lotto_numbers))
+
 while len(lotto_numbers) < 6:
-    number = random.randint(1,51)
+    number = random.randint(1,50)
     # Check if the number is already in the list
     if number not in lotto_numbers:
-        lotto_numbers.append(number)
-print(f"List of random numbers: {lotto_numbers}")
+        lotto_numbers.add(number)
+print(f"List of random numbers: {sorted(lotto_numbers)}")
 
 print('#' * 50)
-# Using set-The list produced by random.sample() is converted to a set,
-lottery_numbers = set(random.sample(range(1,51),6))
-print(lottery_numbers)
+# # Using set-The list produced by random.sample() is converted to a set,
+# lottery_numbers = set(random.sample(range(1,51),6))
+# print(lottery_numbers)
 # lotto = list(lottery_numbers)
 # print(lotto)
 
